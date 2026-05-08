@@ -158,7 +158,7 @@ function bdpay_link($params)
       <div class="bdph-top">
         <div class="bdph-meta">
           <p class="bdph-title">Complete Your Payment</p>
-          <p class="bdph-sub">Invoice #'.$iid.' &bull; '.$amt.' '.$cur.'</p>
+          <p class="bdph-sub">Invoice #'.$iid.'</p>
         </div>
         <button type="button" class="bdph-close" id="bdpay-close-modal">&times;</button>
       </div>
