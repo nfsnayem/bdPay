@@ -1,0 +1,26 @@
+{
+    "schema": "1.0",
+    "version": "1.0.0",
+    "type": "whmcs-gateways",
+    "name": "bdpay",
+    "license": "proprietary",
+    "category": "payments",
+    "description": {
+        "name": "bdPay Manual Mobile Banking",
+        "tagline": "Manual bKash, Nagad, and Rocket Payment Suite for WHMCS (No API Required)",
+        "long": "Accept manual payments from bKash, Nagad, and Rocket accounts without the need for complex API approvals or trade licenses. bdPay provides a professional, tabbed checkout interface for your customers to submit their payment details directly to you.\n\n__Key Features:__\n\n*   **Unified Interface:** A single gateway that supports bKash, Nagad, and Rocket through an interactive tabbed UI.\n*   **No API Needed:** Perfect for small businesses and resellers who don't have official API access.\n*   **Direct Verification:** Integrated WhatsApp and Email buttons allow customers to send their TxID and Sender Number directly to you for instant verification.\n*   **1-Click Copy:** Customers can easily copy your account numbers with a single click to prevent errors.\n*   **Premium UX:** Modern, responsive pop-up modal design that keeps the invoice page clean and professional.\n*   **Easy Setup:** Lightweight single-file installation with simple configuration in the WHMCS admin area.\n\n__Please Note:__\n\nThis is a manual verification gateway. You will receive payment details via WhatsApp or Email and must manually mark the associated invoice as paid in WHMCS after verifying the transaction in your mobile banking app."
+    },
+    "logo": {
+        "filename": "logo.png"
+    },
+    "support": {
+        "homepage": "https://github.com/nfsnayem/",
+        "docs_url": "https://github.com/nfsnayem/"
+    },
+    "authors": [
+        {
+            "name": "Nayem",
+            "homepage": "https://github.com/nfsnayem/"
+        }
+    ]
+}
