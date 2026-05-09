@@ -108,11 +108,11 @@ function bdpay_link($params)
 .bdp-si{margin-top:6px}
 .bdp-numtxt{font-weight:700;font-size:13px;color:var(--tx);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .bdp-copy{border:1px solid var(--bd);padding:5px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;color:var(--t2);background:transparent;cursor:pointer;transition:all .2s;flex-shrink:0;width:28px;height:28px;outline:none}
-.bdp-copy:hover,.bdp-copy:focus{border:1px solid var(--bd);background:transparent;outline:none}
+.bdp-copy:hover,.bdp-copy:focus{border:1px solid var(--bd);background:transparent;outline:none;}
 .bdp-copy.ok{color:#16a34a!important}
-.bdp-steps{list-style:none;margin:4px 0 0;padding:0;counter-reset:step}
-.bdp-steps>li{counter-increment:step;display:flex;gap:10px;align-items:flex-start;padding:3px 0}
-.bdp-steps>li::before{content:counter(step);min-width:22px;height:22px;border-radius:50%;background:var(--step-c,#4f46e5);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.bdp-steps{list-style:none;margin:4px 0 0;padding:0;counter-reset:step;}
+.bdp-steps>li{counter-increment:step;display:flex;gap:10px;align-items:flex-start;padding:5px 0;}
+.bdp-steps>li::before{content:counter(step);min-width:20px;height:20px;border-radius:50%;background:var(--step-c,#4f46e5);color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin:0;}
 .bdp-step-body{flex:1;text-align:left}
 .bdp-step-text{font-size:14px;color:var(--t2);line-height:1.4;display:block;text-align:left}
 .bdp-amt-cur{font-size:11px;font-weight:600;color:var(--t3);margin-left:4px}
