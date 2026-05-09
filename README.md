@@ -1,8 +1,13 @@
 # bdPay — Mobile Banking Gateway for WHMCS
 
-A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows customers to pay invoices via Bangladesh's popular mobile banking services — **bKash**, **Nagad**, and **Rocket**. After payment, customers submit their transaction details for admin verification via WhatsApp or Email.
+![bdPay](https://img.shields.io/badge/Module-bdPay-red?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=flat-square)
+![WHMCS](https://img.shields.io/badge/Platform-WHMCS-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-## Features
+A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows customers to pay invoices via Bangladesh's popular mobile banking services **bKash**, **Nagad**, and **Rocket**. After payment, customers submit their transaction details for admin verification via WhatsApp or Email.
+
+## Features:
 
 - ✅ Supports **bKash**, **Nagad**, and **Rocket** in a single module
 - ✅ Clean, minimal popup modal with tabbed gateway selection
@@ -14,7 +19,7 @@ A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows 
 - ✅ No external font or icon libraries — zero dependencies
 - ✅ Mobile-friendly responsive layout
 
-## Requirements
+## Requirements:
 
 - WHMCS 7.x or higher
 - PHP 7.4+
