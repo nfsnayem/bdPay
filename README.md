@@ -2,29 +2,23 @@
 
 A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows customers to pay invoices via Bangladesh's popular mobile banking services — **bKash**, **Nagad**, and **Rocket**. After payment, customers submit their transaction details for admin verification via WhatsApp or Email.
 
----
-
 ## Features
 
 - ✅ Supports **bKash**, **Nagad**, and **Rocket** in a single module
 - ✅ Clean, minimal popup modal with tabbed gateway selection
 - ✅ Step-by-step payment instructions (numbered, left-aligned)
 - ✅ One-click **copy** buttons for account number, amount, and invoice reference
-- ✅ Displays exact payable amount with currency (e.g. `2500.00 BDT`)
+- ✅ Displays exact payable amount with currency (e.g., `2500.00 BDT`)
 - ✅ Verification via **WhatsApp** or **Email** with pre-filled transaction details
 - ✅ Uses WHMCS default **Pay Now** button — no custom styling on the invoice page
 - ✅ No external font or icon libraries — zero dependencies
 - ✅ Mobile-friendly responsive layout
-
----
 
 ## Requirements
 
 - WHMCS 7.x or higher
 - PHP 7.4+
 - SSL (HTTPS) recommended for clipboard API support
-
----
 
 ## Installation
 
@@ -34,16 +28,10 @@ A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows 
    ```
 
 2. Log in to your **WHMCS Admin Panel**.
-
 3. Go to **Setup → Payment Gateways → All Payment Gateways**.
-
 4. Find **Mobile Banking (bdPay)** and click **Activate**.
-
 5. Go to **Setup → Payment Gateways → Manage Existing Gateways**.
-
 6. Click **Configure** next to **Mobile Banking (bdPay)** and fill in the required fields.
-
----
 
 ## Configuration
 
@@ -55,9 +43,7 @@ A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows 
 | **Admin WhatsApp Number** | Full number with country code, e.g. `8801712345678` |
 | **Admin Email Address** | Email address to receive verification messages |
 
-> **Note:** You only need to fill in the numbers for the gateways you want to offer. If a number is left blank, that tab will still appear but the number field will be empty.
-
----
+> **Note:** You only need to fill in the numbers for the gateways you want to offer. If a number is left blank, that tab will still appear, but the number field will be empty.
 
 ## How It Works
 
@@ -87,24 +73,23 @@ A manual payment gateway module for [WHMCS](https://www.whmcs.com/) that allows 
 2. Admin verifies the transaction manually in the respective banking app.
 3. Admin marks the invoice as **Paid** in WHMCS.
 
----
-
 ## File Structure
 
-```
+```text
 modules/
 └── gateways/
+    ├── bdpay/
+    │   ├── logo.png
+    │   └── whmcs.json
     └── bdpay.php        ← Main gateway module file
 ```
 
----
-
 ## Customization
 
-All styling is embedded directly in `bdpay.php` within the `bdpay_link()` function using CSS custom properties (variables). You can adjust colors by editing the `:root` block:
+All styling is embedded directly in `bdpay.php` within the `bdpay_link()` function using CSS custom properties (variables). You can adjust colors by editing the `: root` block:
 
 ```css
-:root {
+: root {
   --bk: #e2136e;   /* bKash pink */
   --ng: #f97316;   /* Nagad orange */
   --rk: #7c3aed;   /* Rocket violet */
@@ -113,8 +98,6 @@ All styling is embedded directly in `bdpay.php` within the `bdpay_link()` functi
   --sl: #f8fafc;   /* Subtle background */
 }
 ```
-
----
 
 ## Verification Message Format
 
@@ -129,15 +112,11 @@ Sender: [customer's account number]
 TxID: [transaction ID]
 ```
 
----
-
 ## Limitations
 
 - This is a **manual gateway** — no automated payment confirmation via API.
 - Admin must verify each transaction manually and mark invoices as paid.
 - The module does not store transaction data in the WHMCS database.
-
----
 
 ## Changelog
 
@@ -147,14 +126,6 @@ TxID: [transaction ID]
 - Copy-to-clipboard for account number, amount, and reference
 - WhatsApp and Email verification flow
 - WHMCS default Pay Now button integration
-
----
-
-## License
-
-This module is provided as-is for personal and commercial use. No warranty is provided. Modify freely to suit your needs.
-
----
 
 ## Author
 
