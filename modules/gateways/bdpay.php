@@ -80,10 +80,10 @@ function bdpay_link($params)
 .bdpc{width:100%;max-width:525px;margin:16px;border-radius:6px;background:#fff;background-clip:padding-box;overflow:hidden;box-shadow:0 0 1px rgba(0,0,0,.1),0 2px 4px rgba(0,0,0,.2);border:0;outline:0;font-size:16px;position:relative;transform:translateY(18px) scale(.98);transition:transform .35s cubic-bezier(.34,1.56,.64,1);max-height:92vh;display:flex;flex-direction:column}
 .bdpo.on .bdpc{transform:translateY(0) scale(1)}
 .bdph{padding:16px 18px 0;background:#fff;flex-shrink:0}
-.bdph-top{display:flex;align-items:center;margin-bottom:14px}
+.bdph-top{display:flex;align-items:center;margin-bottom:10px;}
 .bdph-logo{height:36px;width:auto;border-radius:8px;object-fit:contain}
 .bdph-meta{flex:1}
-.bdph-title{font-size:16px;font-weight:700;color:var(--t2);margin:0 0 2px}
+.bdph-title{font-size:16px;font-weight:600;color:var(--t2);margin:0 0 2px}
 .bdph-sub{font-size:14px;color:var(--t2);margin:0;font-weight:500;}
 .bdph-close{margin-left:auto;padding:0;background:transparent;border:0;appearance:none;cursor:pointer;font-size:22px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.2;align-self:flex-start;flex-shrink:0}
 .bdph-close:hover{opacity:.5}
@@ -99,23 +99,23 @@ function bdpay_link($params)
 .bdpm.on{display:block;animation:bdFade .2s ease}
 .bdp-btn:focus,.bdp-tab:focus,.bdph-close:focus,button:active,button:focus{outline:0}
 @keyframes bdFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-.bdp-card{border-radius:10px;padding:14px 16px;background:#fbfbfb;border:1.5px solid var(--bd)}
-.bdp-label{font-size:10px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+.bdp-card{border-radius:10px;padding:16px;background:#fbfbfb;border:1.5px solid var(--bd)}
+.bdp-label{font-size:10px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:1.5px;}
 .bdp-amount{font-size:22px;font-weight:800;letter-spacing:-.5px;line-height:1.1;margin-bottom:12px}
 .bdp-row{padding:8px 0;border-bottom:1.5px solid var(--bd)}.bdp-row:last-child{border-bottom:none}
 .bdp-row-label{font-size:11px;color:var(--t2);margin-bottom:4px}
-.bdp-numbox{display:flex;align-items:center;gap:8px;background:var(--sl);border-radius:5px;padding:5px 10px;border:1.5px solid var(--bd)}
+.bdp-numbox{display:flex;align-items:center;gap:8px;background:var(--sl);border-radius:10px;padding:5px 10px;border:1.5px solid var(--bd);}
 .bdp-si{margin-top:6px}
-.bdp-numtxt{font-weight:700;font-size:13px;color:var(--tx);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bdp-numtxt{font-weight:600;font-size:13px;color:var(--tx);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .bdp-copy{border:1px solid var(--bd);padding:5px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;color:var(--t2);background:transparent;cursor:pointer;transition:all .2s;flex-shrink:0;width:28px;height:28px;outline:none}
 .bdp-copy:hover,.bdp-copy:focus{border:1px solid var(--bd);background:transparent;outline:none;}
 .bdp-copy.ok{color:#16a34a!important}
 .bdp-steps{list-style:none;margin:4px 0 0;padding:0;counter-reset:step;}
-.bdp-steps>li{counter-increment:step;display:flex;gap:10px;align-items:flex-start;padding:5px 0;}
+.bdp-steps>li{counter-increment:step;display:flex;gap:10px;align-items:flex-start;padding:6px 0;}
 .bdp-steps>li::before{content:counter(step);min-width:20px;height:20px;border-radius:50%;background:var(--step-c,#4f46e5);color:#fff;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin:0;}
 .bdp-step-body{flex:1;text-align:left}
 .bdp-step-text{font-size:14px;color:var(--t2);line-height:1.4;display:block;text-align:left}
-.bdp-amt-cur{font-size:11px;font-weight:600;color:var(--t3);margin-left:4px}
+.bdp-amt-cur{font-size:13px;font-weight:600;color:var(--t3);margin-left:4px}
 .bdp-fg{margin-bottom:12px;position:relative}
 .bdp-fg label{display:block;font-size:14px;font-weight:600;color:var(--tx);margin-bottom:5px;text-align:left}
 .bdp-input{width:100%;padding:10px 12px 10px 36px;border:1.5px solid var(--bd);border-radius:10px;box-sizing:border-box;font-size:13px;color:var(--tx);background:#fff;transition:all .2s;outline:none}
@@ -175,7 +175,7 @@ function bdpay_link($params)
       <!-- bKash -->
       <div id="bdpm-bkash" class="bdpm on">
         <div class="bdp-card">
-          <div class="bdp-label" style="margin-bottom:8px">How to Pay</div>
+          <div class="bdp-label">How to Pay?</div>
           <ol class="bdp-steps" style="--step-c:var(--bk)">
             <li><div class="bdp-step-body"><span class="bdp-step-text">Open the bKash app or dial *247#</span></div></li>
             <li><div class="bdp-step-body"><span class="bdp-step-text">Select <strong>Send Money</strong></span></div></li>
@@ -191,7 +191,7 @@ function bdpay_link($params)
       <!-- Nagad -->
       <div id="bdpm-nagad" class="bdpm">
         <div class="bdp-card">
-          <div class="bdp-label" style="margin-bottom:8px">How to Pay</div>
+          <div class="bdp-label">How to Pay?</div>
           <ol class="bdp-steps" style="--step-c:var(--ng)">
             <li><div class="bdp-step-body"><span class="bdp-step-text">Open the Nagad app or dial *167#</span></div></li>
             <li><div class="bdp-step-body"><span class="bdp-step-text">Select <strong>Send Money</strong></span></div></li>
@@ -207,7 +207,7 @@ function bdpay_link($params)
       <!-- Rocket -->
       <div id="bdpm-rocket" class="bdpm">
         <div class="bdp-card">
-          <div class="bdp-label" style="margin-bottom:8px">How to Pay</div>
+          <div class="bdp-label">How to Pay?</div>
           <ol class="bdp-steps" style="--step-c:var(--rk)">
             <li><div class="bdp-step-body"><span class="bdp-step-text">Open the Rocket app or dial *322#</span></div></li>
             <li><div class="bdp-step-body"><span class="bdp-step-text">Select <strong>Send Money</strong></span></div></li>
@@ -221,7 +221,7 @@ function bdpay_link($params)
       </div>
 
       <div class="bdp-card" style="margin-top:16px">
-        <div class="bdp-label" style="margin-bottom:12px">Your Payment Details</div>
+        <div class="bdp-label"style="margin-bottom:12px">Your Payment Details</div>
         <div class="bdp-fg">
           <label for="bdpay-sender">Account Number:</label>
           <span class="bdp-ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17z"/></svg></span>
